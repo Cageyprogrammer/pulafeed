@@ -1,12 +1,3 @@
-import type { Metadata } from "next";
-import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "PulaFeed | Botswana's Agriculture Community",
-  description: "Connect with farmers, suppliers, veterinarians and agricultural service providers across Botswana.",
-  icons: { icon: "/favicon.svg" },
-};
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
-}
+import type { Metadata } from 'next'; import './globals.css';
+export const metadata: Metadata={title:{default:"PulaFeed | Botswana Agriculture Community",template:"%s | PulaFeed"},description:"PulaFeed connects Botswana's farmers, buyers, agricultural businesses and service providers through community, knowledge and discovery.",metadataBase:new URL('https://pulafeed.com'),alternates:{canonical:'/'},openGraph:{title:"PulaFeed | Botswana Agriculture Community",description:"Connecting Botswana's farmers to markets, knowledge and opportunities.",url:'https://pulafeed.com',siteName:'PulaFeed',locale:'en_BW',type:'website'},twitter:{card:'summary_large_image',title:'PulaFeed | Botswana Agriculture Community',description:"Connecting Botswana's farmers to markets, knowledge and opportunities."},icons:{icon:'/favicon.svg'}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
