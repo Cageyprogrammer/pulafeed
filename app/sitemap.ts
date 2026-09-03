@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next'; export default function sitemap():MetadataRoute.Sitemap{const base='https://pulafeed.com'; return ['','about','platform','farmers','businesses','impact','partners','insights','contact'].map(path=>({url:`${base}/${path}`,lastModified:new Date('2026-09-03')}))}
